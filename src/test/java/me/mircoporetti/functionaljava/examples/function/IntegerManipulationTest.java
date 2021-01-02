@@ -1,10 +1,10 @@
-package me.mircoporetti.functionaljava.function;
+package me.mircoporetti.functionaljava.examples.function;
 
 import org.junit.jupiter.api.Test;
 
 import java.util.function.Function;
 
-import static me.mircoporetti.functionaljava.function.IntegerManipulation.*;
+import static me.mircoporetti.functionaljava.examples.function.IntegerManipulation.*;
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
 class IntegerManipulationTest {

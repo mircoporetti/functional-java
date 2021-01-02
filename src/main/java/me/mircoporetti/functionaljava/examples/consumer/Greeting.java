@@ -1,4 +1,4 @@
-package me.mircoporetti.functionaljava.consumer;
+package me.mircoporetti.functionaljava.examples.consumer;
 
 import java.util.function.BiConsumer;
 import java.util.function.Consumer;

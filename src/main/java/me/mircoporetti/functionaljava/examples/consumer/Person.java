@@ -1,4 +1,4 @@
-package me.mircoporetti.functionaljava.consumer;
+package me.mircoporetti.functionaljava.examples.consumer;
 
 public class Person {
     private final String name;

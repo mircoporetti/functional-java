@@ -1,4 +1,4 @@
-package me.mircoporetti.functionaljava.consumer;
+package me.mircoporetti.functionaljava.examples.consumer;
 
 import org.junit.jupiter.api.Test;
 
@@ -11,9 +11,7 @@ class GreetingTest {
     void greetPerson() throws Exception {
         Person person = new Person("Mirco", "+39 3401234567");
 
-        String greeting = tapSystemOut(() -> {
-            Greeting.greet.accept(person);
-        });
+        String greeting = tapSystemOut(() -> Greeting.greet.accept(person));
 
         assertEquals("Hello Mirco, phone number: +39 3401234567", greeting.trim());
 
@@ -23,9 +21,7 @@ class GreetingTest {
     void greetPersonWithMaskedPhoneNumber() throws Exception {
         Person person = new Person("Mirco", "+39 3401234567");
 
-        String greeting = tapSystemOut(() -> {
-            Greeting.greetShowingPhoneNumber.accept(person, false);
-        });
+        String greeting = tapSystemOut(() -> Greeting.greetShowingPhoneNumber.accept(person, false));
 
         assertEquals("Hello Mirco, phone number: ***********567", greeting.trim());
 
